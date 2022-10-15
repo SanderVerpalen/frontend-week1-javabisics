@@ -10,4 +10,13 @@ package nl.novi.jp.methods.junior;
  */
 
 public class JuniorFive {
+    public static void main(String[] args) {
+        System.out.println(capatilize("allcaps"));
+    }
+
+    public static String capatilize(String string){
+        String newString = string.toUpperCase();
+
+        return newString;
+    }
 }

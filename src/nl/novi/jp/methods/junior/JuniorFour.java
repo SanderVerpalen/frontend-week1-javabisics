@@ -15,12 +15,16 @@ package nl.novi.jp.methods.junior;
 
 public class JuniorFour {
     public static void main(String[] args) {
-        //doTransaction(1000, -200);
-        //doTransaction(123, 3445);
+        doTransaction(1000, -200);
+        doTransaction(123, 3445);
     }
 
-    public static void doTransaction() {
-
+    public static void doTransaction(int ix, int iy) {
+        if(iy>0){
+            deposit(ix, iy);
+        }else{
+            withdraw(ix, iy);
+        }
     }
 
     public static void deposit(int bankAccountBalance, int amount) {
